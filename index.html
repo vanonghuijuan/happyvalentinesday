@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Name on the tab -->
-    <title> Happy Valentine's Day! </title>  
+    <title> Hey... </title>  
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
     <!-- Input text on webpage -->
-    <h2>Dear Elvin, Happy Valentine's Day.</h2>
-    <h3>Here are some of my thank you messages for you!</h3>
-    
-    <!-- The below container holds the img and text of the messages -->
-    <div class="container">
-        <img id="image" src="images/yubiteme.jpeg" alt="Message Image" class="message-image" style="display: none;">
-        <p id="message" style="display: none;">Thank you for making everyday fun for me</p>
+    <h1>Hello bao! <br> Happy Valentine's day <3</h1>
+    </header>
 
-        <button onclick="myFunction()" id="select"> Change message </button>
+    <body>
+    <h2>Here's a flower for you ^_^</h2>
+    <div class="rose">
+        <img src="images/home-icons/rose-icon.png" alt="roses-for-him">
     </div>
+
+    <div class="icon-row">
+        <div class="icon-column" onclick="goReadMail()">
+            <!-- Icon 1 -->
+            <h2>You've got mail!<br></h2>
+            <p>(Tap/Click to open)</p>
+            <div class="love-letter">
+                <img src="images/pixel-mail.gif" alt="mail-for-him">
+            </div>
+
+    </body>
 
     <footer class="footer">
     </footer>
+    
     <script src="script.js"></script>
   </body>
 </html>

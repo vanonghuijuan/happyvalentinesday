@@ -1,34 +1,13 @@
-// function myFunction() {
-//   idArray = new Array()
-//   idArray [1] = "Thank you for making everyday fun for me", image
-//   idArray [2] = "Thank you for cooking for me"
-//   idArray [3] = "Thank you for taking care of me all the time"
-//   idArray [4] = "Thank you for believing in me"
-//   idArray [5] = "Thank you for letting me be me"
-//   idArray [6] = "Thank you for loving me"
-//   idArray [7] = "Thank you for spending time with me"
-//   idArray [8] = "Thank you for bringing out on cute dates"
-//   idArray [9] = "Thank you for making me laugh"
-//   idArray [10] = "Thank you for playing games with me"
-
-//   document.getElementById("select").onclick = myFunction;
-//   randomParagraph = Math.floor(Math.random()*10);
-
-//   document.getElementById("result").innerHTML = idArray[randomParagraph + 1];       
-// }
-
 function myFunction() {
   const idArray = [
-    { message: "Thank you for making everyday fun for me", image: "images/yubiteme.jpeg" },
-    { message: "Thank you for cooking for me", image: "images/image2.jpg" },
-    { message: "Thank you for taking care of me all the time"},
-    { message: "Thank you for believing in me"},
-    { message: "Thank you for letting me be me"},
-    { message: "Thank you for loving me"},
-    { message: "Thank you for spending time with me"},
-    { message: "Thank you for bringing out on cute dates"},
-    { message: "Thank you for making me laugh"},
-    { message: "Thank you for playing games with me"},
+    { message: "Thank you for making everyday fun for me", image: "images/message-img/concert.png"},
+    { message: "Thank you for cooking for me", image: "images/message-img/chefs.png"},
+    { message: "Thank you for believing in me", image: "images/message-img/sleeping.png"},
+    { message: "Thank you for letting me lean on you", image: "images/message-img/leaning.png"},
+    { message: "Thank you for bringing me to eat good food", image: "images/message-img/eating.png"},
+    { message: "Thank you for spending time with me", image: "images/message-img/dates.png"},
+    { message: "Thank you for taking care of me", image: "images/message-img/takecare.png"},
+    { message: "Thank you for playing games with me", image: "images/message-img/gaming.png"},
   ];
 
   const randomIndex = Math.floor(Math.random() * idArray.length);
@@ -43,4 +22,14 @@ function myFunction() {
   // Show the message and image
   messageElement.style.display = "block";
   imageElement.style.display = "inline"; // Make sure the display is set to "inline" or "block"
+}
+
+// function to go to love-letter page
+function goReadMail() {
+  window.location.href = "love-letter.html"; // Replace with the actual filename of your gallery page
+}
+
+// function to go back to main page
+function goBack() {
+  window.history.back();
 }
